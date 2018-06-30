@@ -2,6 +2,8 @@
 title: JavaScript undefined
 date: 2018-6-19
 description: JavaScript 里，undefined 既是一个类型，又是一个全局变量，同时它还是一个值。
+tags:
+  - JavaScript
 ---
 
 声明一个变量，但不给它赋值：
