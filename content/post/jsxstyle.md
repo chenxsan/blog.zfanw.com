@@ -2,6 +2,8 @@
 title: jsxstyle - CSS 命名很难
 permalink: /jsxstyle
 date: 2018-05-05
+tags:
+  - CSS in JS
 ---
 
 React.js 兴起后，CSS in JS 也雨后春笋般冒出来，甚至有人在 github 上建了[仓库](https://github.com/MicheleBertoli/css-in-js)，收集各种 CSS in JS 框架。
