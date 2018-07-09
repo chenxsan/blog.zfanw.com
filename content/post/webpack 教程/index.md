@@ -141,7 +141,7 @@ One CLI for webpack must be installed. These are recommended choices, delivered 
 We will use "npm" to install the CLI via "npm install -D".
 Which one do you like to install (webpack-cli/webpack-command):
 ```
-命令没有执行，提示我们安装一个命令行工具，或 `webpack-cli`，或 `webpack-command`，这是因为 webpack 4 里将命令行相关代码迁移出去了。但因为 [webpack-command 最终将取代 webpack-cli](https://blog.zfanw.com/webpack-command-webpack-cli/)，所以这里我选择 webpack-command。
+命令没有执行，提示我们安装一个命令行工具，或 `webpack-cli`，或 `webpack-command`，这是因为 webpack 4 里将命令行相关代码迁移出去了。这里我选择 webpack-command。
 
 输入 `webpack-command` 然后回车，稍等一会儿，`webpack-command` 就安装好。之后再执行上述打包命令，结果如下：
 
@@ -293,7 +293,7 @@ webpack 监控到 `src/index.js` 文件的变化，重新构建 `dist/main.js`�
 首先在项目下安装 `webpack-serve`：
 
 ```bash
-$ npm install -D webpack-serve@beta
+$ npm install -D webpack-serve
 ```
 安装完成后在命令行下执行 `webpack-serve`：
 
