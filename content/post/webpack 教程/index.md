@@ -32,7 +32,7 @@ tags:
 
 我们当然清楚，在 JavaScript 里 `import` 图片会报错。但在 webpack 下，这是可行的。这归功于**加载器**（loader）。通过加载器，webpack 将 JavaScript 的模块化推广到其它文件类型 - 这正是 webpack 跨出的与众不同的一步 - 但也导致它配置繁多，广受诟病。
 
-但明白 webpack 这一用意，我们就掌握了 webpack 核心(科技)，接下来，查查文档，基本都能搞定。是的，你也可以成为 webpack 配置工程师。
+但明白 webpack 这一用意，我们就掌握了 webpack 核心，接下来，查查文档，基本都能搞定。是的，你也可以成为 webpack 配置工程师。
 
 ## 从零开始手写 React.js 项目
 
