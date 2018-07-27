@@ -49,7 +49,7 @@ Chrome 内置了 Task Manager，类似 Windows 的任务管理器，打开方式
 
 ## 内存分析
 
-通过 Performance 面板，我们能够监控到内存变化的趋势，但具体是哪些代码引起的内存问题？则需要进一步  借助 Chrome 开发者工具 Memory 面板下的两个内存分析助手：
+通过 Performance 面板，我们能够监控到内存变化的趋势，但具体是哪些代码引起的内存问题？则需要进一步借助 Chrome 开发者工具 Memory 面板下的两个内存分析助手：
 
 - Heap Snapshot
 - Allocation instrumentation on timeline
