@@ -12,19 +12,19 @@ tags:
 
 如果你在开发 JavaScript 应用时发现页面有明显的卡顿、甚至崩溃的状况，那么很可能内存泄露了。
 
-要怎么调查内存泄露的问题？从哪里开始？怎样的一个步骤？
+要怎么调查内存泄露的问题？从哪里开始？怎样一个步骤？
 
 ## Chrome Task Manager
 
-Chrome 内置了 Task Manager，类似 Windows 的任务管理器，打开方式见下图（截图中 Chrome 版本号为 68.0.3440.75）：
+Chrome 内置了 Task Manager，类似 Windows 的任务管理器，它的打开方式见下图（截图中 Chrome 版本号为 68.0.3440.75）：
 
 ![Open Chrome task manager](./open-chrome-task-manager.png)
 
-打开 Chrome 的 Task Manager 后，我们能看到当前打开的各个标签页的 JavaScript 内存用量：
+打开 Chrome 的 Task Manager 后，我们能看到当前打开的各个标签页的 JavaScript 内存使用情况：
 
 ![chrome task manager memory usage](./chrome-task-manager.png)
 
-截图中 `JavaScript Memory` 一列有两个值，我们主要关心括号中的 live 数据 - 如果这个数值在增加，则表示可能有新对象创建了，又或者旧对象在增长。
+截图中 `JavaScript Memory` 一列有两个值，我们主要关心括号中的 live 数据 - 如果这个数值在增加，则表示可能有新对象创建了，又或者旧对象在膨胀。
 
 ## Chrome 开发者工具
 
@@ -37,8 +37,8 @@ Chrome 内置了 Task Manager，类似 Windows 的任务管理器，打开方式
 1.  打开 Chrome 开发者工具
 2.  点击 Performance 面板
 3.  勾选 Memory 选项
-4.  点击 `Collect garbage` 按钮回收内存
-5.  点击录制按钮
+4.  点击录制按钮
+5.  点击 `Collect garbage` 按钮回收内存
 6.  执行可疑操作
 7.  点击 `Collect garbage` 按钮回收内存
 8.  再次点击录制按钮，结束录制
@@ -63,4 +63,4 @@ Allocation instrumentation on timeline 可以纪录开启时段中内存分配�
 ## 扩展阅读
 
 1.  [Fix Memory Problems](https://developers.google.com/web/tools/chrome-devtools/memory-problems/)
-2. [视频：The Breakpoint Ep. 8: Memory Profiling with Chrome DevTools](https://www.youtube.com/watch?v=L3ugr9BJqIs)
+2.  [视频：The Breakpoint Ep. 8: Memory Profiling with Chrome DevTools](https://www.youtube.com/watch?v=L3ugr9BJqIs)
