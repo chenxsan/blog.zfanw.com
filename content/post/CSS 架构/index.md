@@ -8,7 +8,7 @@ tags:
   - 翻译
 ---
 
-> **声明**：本文译自 [CSS Architecture](http://philipwalton.com/articles/css-architecture/)。
+> **声明**：本文译自 [CSS Architecture](https://philipwalton.com/articles/css-architecture/)。
 
 对大部分 Web 开发人员来说，精通 CSS 意味着你能够在代码中完美复现一个视觉模型。你没有使用表格，也尽少用到图片 - 对此你觉得自豪。如果你真的足够厉害，则你会用最新、最好的技术，比如媒体查询，过渡与转换。对优秀的 CSS 开发人员来说，这些都是必须，但在评估个人技能时，CSS 有一个方面很少被提及。
 
