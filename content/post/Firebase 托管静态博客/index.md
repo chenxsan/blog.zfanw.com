@@ -4,7 +4,7 @@ date: 2018-07-30
 permalink: /firebase-hosting-static-site
 ---
 
-我的博客就是些静态 HTML 文件，一向都部署在 VPS 上，但最近觊觎 CDN 的速度，于是调查一番，选了 firebase 来托管博客，看看效果如何。
+我的博客就是些静态 HTML 文件，一向都部署在 VPS 上，但最近觊觎 CDN 的速度，于是调查一番，选了 firebase 来托管博客。
 
 firebase 提供的免费托管特性如下：
 
