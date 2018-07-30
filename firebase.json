@@ -20,8 +20,8 @@
         "source": "**/*.@(js|css)",
         "headers": [
           {
-            "key": "expires",
-            "value": "365d"
+            "key": "Cache-Control",
+            "value": "max-age=31536000"
           }
         ]
       }
