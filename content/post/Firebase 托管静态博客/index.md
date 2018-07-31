@@ -29,7 +29,7 @@ $ npm install -g firebase-tools
 
 ## 创建项目
 
-登录 [https://console.firebase.google.com](https://console.firebase.google.com)，然后添加一个项目。
+登录 [https://console.firebase.google.com](https://console.firebase.google.com)，然后添加一个项目 - 稍后我们就会把博客部署到这个项目下。
 
 ## firebase login
 
