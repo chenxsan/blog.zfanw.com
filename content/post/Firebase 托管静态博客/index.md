@@ -28,7 +28,7 @@ firebase 提供的免费托管特性如下：
 我们需要预先安装 `firebase-tools`，这是一个基于 Node.js 的工具包，我们需要通过 `npm` 或是 `yarn` 来安装：
 
 ```bash
-$ npm install -g firebase-tools
+$ yarn global add firebase-tools
 ```
 
 安装完成后，命令行下就有 `firebase` 命令供差遣。
