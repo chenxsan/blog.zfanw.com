@@ -163,7 +163,13 @@ $ firebase deploy --only hosting
    $ vim client.js
    ```
 4. 调整代理如下：
-   `js - var proxy = options.proxy || {} + var proxy = options.proxy || { + origin: 'http://localhost:1087', // 你的电脑上代理的地址 + headers: {'User-Agent': 'node'} + }`
+   ```js
+   - var proxy = options.proxy || {}
+   + var proxy = options.proxy || {
+   +   origin: 'http://localhost:1087', // 你的电脑上代理的地址
+   +   headers: {'User-Agent': 'node'}
+   + }
+   ```
    现在再运行 `firebase deploy` 就强制它走代理了。
 
 ## 自定义域名
