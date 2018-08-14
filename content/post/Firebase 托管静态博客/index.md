@@ -1,7 +1,7 @@
 ---
 title: Firebase 托管静态博客
 date: 2018-07-30
-dateModified: 2018-8-11
+dateModified: 2018-8-14
 permalink: /firebase-hosting-static-site
 ---
 
@@ -140,29 +140,30 @@ i  hosting: Serving hosting files from: dist
 ```bash
 $ firebase deploy --only hosting
 ```
+> 说明，firebase-tools 4.1.0 版本已修复代理后无法部署的 bug
 
-很遗憾，这里有个[存活多年的 bug](https://github.com/firebase/firebase-tools/issues/155)，`deploy` 命令在代理后面无法部署内容。
+<del>很遗憾，这里有个[存活多年的 bug](https://github.com/firebase/firebase-tools/issues/155)，`deploy` 命令在代理后面无法部署内容。</del>
 
-中国区人民顿时陷入死循环 - 关了代理肯定部署不了，开着代理也部署不了。
+<del>中国区人民顿时陷入死循环 - 关了代理肯定部署不了，开着代理也部署不了。</del>
 
-一个[极度粗暴的解决办法](https://github.com/firebase/firebase-tools/issues/155#issuecomment-253255836)是这样：
+<del>一个[极度粗暴的解决办法](https://github.com/firebase/firebase-tools/issues/155#issuecomment-253255836)是这样：
 
-1. `which firebase` 找出 `firebase` 命令的地址
+1. <del>`which firebase` 找出 `firebase` 命令的地址</del>
    ```bash
    $ which firebase
    /usr/local/bin/firebase
    ```
-2. `ls -l /usr/local/bin/firebase` 找出 `firebase` 真实地址
+2. <del>`ls -l /usr/local/bin/firebase` 找出 `firebase` 真实地址</del>
    ```bash
    $ ls -l /usr/local/bin/firebase
    lrwxr-xr-x  1 sam  admin  79 Jul 29 13:52 /usr/local/bin/firebase -> ../../../Users/sam/.config/yarn/global/node_modules/firebase-tools/bin/firebase
    ```
-3. 这样我就知道 `firebase` 安装包的位置：
+3. <del>这样我就知道 `firebase` 安装包的位置：</del>
    ```bash
    $ cd /Users/sam/.config/yarn/global/node_modules/firebase/node_modules/faye-websocket/lib/faye/websocket/
    $ vim client.js
    ```
-4. 调整代理如下：
+4. <del>调整代理如下：</del>
    ```js
    - var proxy = options.proxy || {}
    + var proxy = options.proxy || {
@@ -170,7 +171,7 @@ $ firebase deploy --only hosting
    +   headers: {'User-Agent': 'node'}
    + }
    ```
-   现在再运行 `firebase deploy` 就强制它走代理了。
+   <del>现在再运行 `firebase deploy` 就强制它走代理了。</del>
 
 ## 自定义域名
 
