@@ -140,8 +140,6 @@ i  hosting: Serving hosting files from: dist
 ```bash
 $ firebase deploy --only hosting
 ```
-> 说明，firebase-tools 4.1.0 版本已修复代理后无法部署的 bug
-
 <del>很遗憾，这里有个[存活多年的 bug](https://github.com/firebase/firebase-tools/issues/155)，`deploy` 命令在代理后面无法部署内容。</del>
 
 <del>中国区人民顿时陷入死循环 - 关了代理肯定部署不了，开着代理也部署不了。</del>
