@@ -8,6 +8,7 @@ permalink: /webpack-tutorial
 toc: true
 tags:
   - webpack
+  - 教程
 ---
 
 > 本文基于 webpack 4，babel 7，最近更新于 2018-06-23

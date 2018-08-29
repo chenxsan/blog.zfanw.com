@@ -3,6 +3,9 @@ title: Firebase 托管静态博客
 date: 2018-07-30
 dateModified: 2018-8-14
 permalink: /firebase-hosting-static-site
+tags:
+  - firebase
+  - 教程
 ---
 
 我的博客就是些静态 HTML 文件，一向都部署在 VPS 上，但最近觊觎 CDN 的速度，于是调查一番，选了 firebase 来托管博客。
