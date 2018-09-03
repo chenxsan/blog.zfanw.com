@@ -8,7 +8,7 @@ tags:
   - 教程
 ---
 
-我的博客就是些静态 HTML 文件，一向都部署在 VPS 上，但最近觊觎 CDN 的速度，于是调查一番，选了 firebase 来托管博客。
+我的博客就是些静态 HTML 文件，一向都部署在自建的 VPS 上，但最近觊觎 CDN 的速度，于是调查一番，选了 firebase 来托管博客。
 
 firebase 提供的免费托管特性如下：
 
@@ -18,9 +18,7 @@ firebase 提供的免费托管特性如下：
 4. 免费 CDN
 5. 可回滚的部署历史记录 - 犯错也不怕
 
-对我这样每个月不过几千访问量的博客来说，firebase 的免费档应该是绰绰有余。即便不够，也还可以考虑 Blaze 方案 - 即用即付。
-
-不过，在长城境内使用 firebase 可谓困难重重 - 全程代理还不够。
+对我这样每个月不过几千访问量的博客来说，firebase 的免费档应该是绰绰有余。一旦出现不够用的情况，还可以考虑 Blaze 方案 - 即用即付。
 
 ## 创建项目
 
@@ -77,7 +75,7 @@ r to confirm your choices. (Press <space> to select)
 
 因为我们只是要托管静态博客，所以选择 `Hosting: Configure and deploy Firebase Hosting sites`。
 
-稍后会让我们关联一个 Firebase 项目，选择我们在 firebase 后台新建的项目。当然，你也可以直接在命令行下新建一个，又或者干脆不设置。
+稍后会让我们关联一个 Firebase 项目，选择我们在 firebase 后台新建的项目。
 
 再往后则是：
 
@@ -143,36 +141,6 @@ i  hosting: Serving hosting files from: dist
 ```bash
 $ firebase deploy --only hosting
 ```
-<del>很遗憾，这里有个[存活多年的 bug](https://github.com/firebase/firebase-tools/issues/155)，`deploy` 命令在代理后面无法部署内容。</del>
-
-<del>中国区人民顿时陷入死循环 - 关了代理肯定部署不了，开着代理也部署不了。</del>
-
-<del>一个[极度粗暴的解决办法](https://github.com/firebase/firebase-tools/issues/155#issuecomment-253255836)是这样：
-
-1. <del>`which firebase` 找出 `firebase` 命令的地址</del>
-   ```bash
-   $ which firebase
-   /usr/local/bin/firebase
-   ```
-2. <del>`ls -l /usr/local/bin/firebase` 找出 `firebase` 真实地址</del>
-   ```bash
-   $ ls -l /usr/local/bin/firebase
-   lrwxr-xr-x  1 sam  admin  79 Jul 29 13:52 /usr/local/bin/firebase -> ../../../Users/sam/.config/yarn/global/node_modules/firebase-tools/bin/firebase
-   ```
-3. <del>这样我就知道 `firebase` 安装包的位置：</del>
-   ```bash
-   $ cd /Users/sam/.config/yarn/global/node_modules/firebase/node_modules/faye-websocket/lib/faye/websocket/
-   $ vim client.js
-   ```
-4. <del>调整代理如下：</del>
-   ```js
-   - var proxy = options.proxy || {}
-   + var proxy = options.proxy || {
-   +   origin: 'http://localhost:1087', // 你的电脑上代理的地址
-   +   headers: {'User-Agent': 'node'}
-   + }
-   ```
-   <del>现在再运行 `firebase deploy` 就强制它走代理了。</del>
 
 ## 自定义域名
 
