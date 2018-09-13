@@ -1,7 +1,7 @@
 ---
 title: webpack-command 将取代 webpack-cli
 date: 2018-6-22
-dateModified: 2018-7-9
+dateModified: 2018-9-13
 tags:
   - webpack
   - 新闻
@@ -22,3 +22,7 @@ toc: false
 ## 更新
 
 事情有变：webpack-command 作者称 webpack 项目带头人不支持 webpack-cli 迁移到 webpack-command 的计划。
+
+## 更新 2
+
+webpack 命令[不再推荐 webpack-command](https://github.com/webpack/webpack/pull/7966)。
