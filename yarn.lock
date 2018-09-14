@@ -2,25 +2,25 @@
 # yarn lockfile v1
 
 
-"@okmarvin/january@^1.0.0":
-  version "1.1.114"
-  resolved "https://registry.yarnpkg.com/@okmarvin/january/-/january-1.1.114.tgz#aad4226eb65d7bcd17444edf624600eaccdab014"
+"@okmarvin/january@^1.1.115":
+  version "1.1.115"
+  resolved "https://registry.yarnpkg.com/@okmarvin/january/-/january-1.1.115.tgz#630d50db8bfc01b73cca5814af93d69f58e1a296"
   dependencies:
-    "@okmarvin/slug" "^0.0.1"
+    "@okmarvin/slug" "^0.0.6"
     "@reach/router" "^1.0.7"
     date-fns "^1.29.0"
     jsxstyle "^2.1.3"
-    lodash "^4.17.10"
+    lodash "^4.17.11"
     prismjs "^1.14.0"
     prop-types "^15.6.1"
-    react "^16.4.0"
-    react-dom "^16.4.0"
+    react "^16.5.1"
+    react-dom "^16.5.1"
     react-helmet-async "0.1.0"
-    sanitize.css "^7.0.0"
+    sanitize.css "^7.0.3"
 
-"@okmarvin/slug@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@okmarvin/slug/-/slug-0.0.1.tgz#250456a471ba229de7173069e02109a5426118fc"
+"@okmarvin/slug@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@okmarvin/slug/-/slug-0.0.6.tgz#47aaf15101bb41acfb3589323b252dede1ece405"
   dependencies:
     github-slugger "^1.2.0"
 
@@ -58,8 +58,8 @@ create-react-context@^0.2.1:
     gud "^1.0.0"
 
 csstype@^2.2.0:
-  version "2.5.6"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.6.tgz#2ae1db2319642d8b80a668d2d025c6196071e788"
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.7.tgz#bf9235d5872141eccfb2d16d82993c6b149179ff"
 
 date-fns@^1.29.0:
   version "1.29.0"
@@ -83,7 +83,7 @@ encoding@^0.1.11:
   dependencies:
     iconv-lite "~0.4.13"
 
-fbjs@^0.8.0, fbjs@^0.8.16:
+fbjs@^0.8.0:
   version "0.8.17"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   dependencies:
@@ -150,9 +150,9 @@ jsxstyle@^2.1.3:
   dependencies:
     jsxstyle-utils "^2.1.3"
 
-lodash@^4.17.10:
-  version "4.17.10"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
+lodash@^4.17.11:
+  version "4.17.11"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   version "1.4.0"
@@ -183,21 +183,21 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.6.0, prop-types@^15.6.1:
+prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
-react-dom@^16.4.0:
-  version "16.4.2"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.2.tgz#4afed569689f2c561d2b8da0b819669c38a0bda4"
+react-dom@^16.5.1:
+  version "16.5.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.1.tgz#29d0c5a01ed3b6b4c14309aa91af6ec4eb4f292c"
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    schedule "^0.4.0"
 
 react-helmet-async@0.1.0:
   version "0.1.0"
@@ -212,22 +212,28 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
-react@^16.4.0:
-  version "16.4.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.4.2.tgz#2cd90154e3a9d9dd8da2991149fdca3c260e129f"
+react@^16.5.1:
+  version "16.5.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.5.1.tgz#8cb8e9f8cdcb4bde41c9a138bfbf907e66132372"
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    schedule "^0.4.0"
 
 "safer-buffer@>= 2.1.2 < 3":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
-sanitize.css@^7.0.0:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-7.0.1.tgz#fded48dd9d91f64afcbce4997b0d8add689c8aff"
+sanitize.css@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-7.0.3.tgz#121929e784381013256cd4805d1d8983a95ffae3"
+
+schedule@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/schedule/-/schedule-0.4.0.tgz#fa20cfd0bfbf91c47d02272fd7096780d3170bbb"
+  dependencies:
+    object-assign "^4.1.1"
 
 select@^1.1.2:
   version "1.1.2"
@@ -256,5 +262,5 @@ warning@^3.0.0:
     loose-envify "^1.0.0"
 
 whatwg-fetch@>=0.10.0:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz#dde6a5df315f9d39991aa17621853d720b85566f"
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
