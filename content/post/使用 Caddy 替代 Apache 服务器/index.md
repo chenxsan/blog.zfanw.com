@@ -2,24 +2,26 @@
 title: 使用 Caddy 替代 Apache 服务器
 date: 2018-10-25
 permalink: /replace-apache-with-caddy
+tags:
+  - caddy
 ---
 
 我曾经写过一篇 [macOS 下的 Apache 配置](https://blog.zfanw.com/macos-apache/)，是了，Apache 配置很复杂，不复杂的话，我就记在脑子，不用写下来。
 
-或许对专业人士来说，Apache 的复杂是可以接受的。但对我这样，偶尔一两次才需要在本地启动 PHP 服务、运行后端代码的前端开发人员来说，这种复杂不值得。所以慢慢地，我在向 [caddy](https://caddyserver.com) 迁移。
+或许对专业人士来说，Apache 的复杂是可以接受的。但对我这样，偶尔一两次才需要在本地启动 PHP 服务、运行后端代码的前端开发人员来说，这种复杂不值得。这是我慢慢地向 [caddy](https://caddyserver.com) 迁移的一大原因。
 
 ## 安装
 
-Caddy 是基于 Go 语言写的，因此，它就只是一个可执行程序文件。我们在[下载页面](https://caddyserver.com/download)勾选平台、插件及许可证后，下载页面上就会显示相应的安装操作：
+Caddy 是基于 Go 语言写的，所以它只有一个可执行程序文件。我们在[下载页面](https://caddyserver.com/download)勾选平台、插件及许可证后，下载页面就会显示相应的安装操作：
 
 1. 直接下载可执行文件：https://caddyserver.com/download/darwin/amd64?license=personal&telemetry=off
 2. 一键安装：`curl https://getcaddy.com | bash -s personal`
 
-我通常使用第二种方案，这样不必再自行配置环境变量路径。
+我通常使用第二种方案，这样不需要再自己配置环境变量路径值。
 
 ## 启动 caddy
 
-在启动 caddy 前，我们需要关闭 macOS 上的 apache：
+在启动 caddy 前，我们需要关闭 macOS 上的 apache 服务：
 
 1. `sudo apachectl stop` - 停止 apache
 2. `sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist` - 永久禁用 apache
@@ -27,6 +29,7 @@ Caddy 是基于 Go 语言写的，因此，它就只是一个可执行程序文�
 好了，假定我们的项目在 `/Users/sam/blog` 目录，我们可以进入该目录，并执行 `caddy`：
 
 ```sh
+$ cd /Users/sam/blog
 $ caddy
 Activating privacy features... done.
 http://:2015
