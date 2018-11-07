@@ -10,7 +10,7 @@ toc: false
 
 ## 作者
 
-前端开发，目前从事远程工作。
+前端开发，目前[从事远程工作](/how-i-found-a-remote-job/)。
 
 <img src='./samchen.jpg' width='300' alt='陈三' />
 
