@@ -49,6 +49,12 @@ $ caddy -port 80
 ```sh
 $ caddy -host blog.sam -port 80
 ```
+之后在 `/etc/hosts` 文件中新增：
+
+```hosts
+127.0.0.1 blog.sam
+```
+将域名 `blog.sam` 解析至 127.0.0.1 地址。
 
 ## Caddyfile
 
