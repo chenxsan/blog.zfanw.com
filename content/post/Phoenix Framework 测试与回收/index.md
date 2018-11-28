@@ -28,7 +28,7 @@ toc: false
 
       assert_error_sent 404, fn ->
          # <- 此时 conn.assigns.current_user 还有 %User{} 值
-        get(conn, Routes.site_path(conn, :show, site)) # <- 这里 302 了，current_user 值丢失
+        get(conn, Routes.site_path(conn, :show, site)) # <- 这里 302 了，而不是预期的 404，经检查发现 current_user 值丢失
       end
     end
   end
