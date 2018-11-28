@@ -3,6 +3,6 @@ module.exports = {
     toc: {
       title: '目录'
     },
-    loadLanguages: ['bash']
+    loadLanguages: ['bash', 'elixir']
   }
 }
