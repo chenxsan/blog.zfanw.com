@@ -4,6 +4,7 @@ date: 2018-11-26
 permalink: /phoenix-framework-conn-test-recycling
 tags:
   - Phoenix
+toc: false
 ---
 
 如果你看过 [Programming Phoenix 一书](https://pragprog.com/book/phoenix14/programming-phoenix-1-4)，你可能已经知道，书里在测试时，为了通过 `Auth` 模块的检查，推荐使用 `conn = assign(conn, :current_user, user)` 来模拟已登录状态。
@@ -184,3 +185,7 @@ end
   end
 ```
 至于为什么 Programming Phoenix 没有推荐后面这种方案？大概是因为开销更大，毕竟有一个 `Accounts.get_user` 要执行。
+
+## 相关链接
+
+1. [Why Phoenix recycling](https://elixirforum.com/t/why-phoenix-recycling/18201)
