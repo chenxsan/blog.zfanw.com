@@ -592,7 +592,7 @@ Module build failed: Unknown word (5:1)
    }
  }
 ```
-但 webpack-serve 又抛出错误：
+但 webpack-dev-server 又抛出错误：
 
 ```bash
 ERROR in ./src/index.js
@@ -702,7 +702,7 @@ $ npm install --save-dev html-webpack-plugin
 +    new HtmlWebpackPlugin()
    ],
 ```
-接着删掉项目下的 `index.html`，并重启 webpack-serve。查看浏览器页面，能够正常访问，但 title 却是 `Webpack App`，再调整一下 `webpack.config.js`：
+接着删掉项目下的 `index.html`，并重启 webpack-dev-server。查看浏览器页面，能够正常访问，但 title 却是 `Webpack App`，再调整一下 `webpack.config.js`：
 
 ```js
    plugins: [
@@ -754,7 +754,7 @@ Cool，`dist` 目录下啥都有了，我们不再需要部署前手动拷贝 `i
 
 ## 脚手架
 
-前面的步骤里，我们几乎是一步、一步手动配置每个类型文件的加载器，一次添加一小节配置，然后重启 `webpack-serve`，有时还需要手动刷新页面，恐怕没人喜欢这样干活。因此市面上有非常多的 boilerplates、presets 等，其中比较出名的有：
+前面的步骤里，我们几乎是一步、一步手动配置每个类型文件的加载器，一次添加一小节配置，然后重启 `webpack-dev-server`，有时还需要手动刷新页面，恐怕没人喜欢这样干活。因此市面上有非常多的 boilerplates、presets 等，其中比较出名的有：
 
 1. [create-react-app](https://github.com/facebookincubator/create-react-app/) react 官方出品的一套，只适用开发 react.js 项目；
 2. [neutrino.js](https://neutrino.js.org/) 这是 Mozilla 出品的一套解决方案，Web、React、Node.js 等方案均有。
