@@ -2,9 +2,10 @@
 # yarn lockfile v1
 
 
-"@okmarvin/january@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@okmarvin/january/-/january-1.6.0.tgz#564117ba3e3baa073782a2263e0915a031fcaa73"
+"@okmarvin/january@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@okmarvin/january/-/january-1.6.2.tgz#d8f6a36e07ea5e22bd7f0d0fab6da4e94c329d9b"
+  integrity sha512-RBtNiIb+pFmo6uHm4DGeb3eNKDW9xWHg0hjVJ+eFT8IGZKJP0AGqFbG9CoL3KKwGYMAhd8AHn7bkeT98UTzPcQ==
   dependencies:
     "@okmarvin/slug" "^0.0.6"
     "@reach/router" "^1.0.7"
