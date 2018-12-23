@@ -18,8 +18,8 @@ permalink = "/"
 
 [[menu]]
 text = "看书"
-permalink = "/read"
+permalink = "/read/"
 
 [[menu]]
 text = "关于"
-permalink = "/about"
+permalink = "/about/"
