@@ -5,6 +5,7 @@ author = "陈三"
 url = "https://blog.zfanw.com"
 toc = true
 theme = "@okmarvin/january"
+themeColor = "#ffd54f"
 github = "chenxsan"
 twitter = "saturnake"
 google_analytics = "UA-19839258-14"
