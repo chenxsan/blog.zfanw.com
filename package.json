@@ -20,7 +20,5 @@
     "url": "https://github.com/chenxsan/blog.zfanw.com/issues"
   },
   "homepage": "https://github.com/chenxsan/blog.zfanw.com#readme",
-  "devDependencies": {
-    "benchmark": "^2.1.4"
-  }
+  "devDependencies": {}
 }
