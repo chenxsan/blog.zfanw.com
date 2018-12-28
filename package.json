@@ -14,7 +14,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@okmarvin/january": "^1.8.0"
+    "@okmarvin/january": "^1.9.1"
   },
   "bugs": {
     "url": "https://github.com/chenxsan/blog.zfanw.com/issues"
