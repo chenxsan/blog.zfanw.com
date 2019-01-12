@@ -9,7 +9,7 @@ toc: false
 
 如果你看过 [Programming Phoenix 一书](https://pragprog.com/book/phoenix14/programming-phoenix-1-4)，你可能已经知道，书里在测试时，为了通过 `Auth` 模块的检查，推荐使用 `conn = assign(conn, :current_user, user)` 来模拟已登录状态。
 
-然而我照猫画虎，在给我的 Phoenix 控制器代码写测试时，发现一个奇怪问题：同一个 `test` 块，前后两行代码， `conn.assigns` 值却是不一致的：
+然而我照猫画虎，在给我的 Phoenix 控制器代码写测试时，发现一个奇怪问题：同一个 `test` 块，前后两行代码， `conn.assigns` 值却是不一致的：
 
 ```elixir
   defp log_in_user(%{conn: conn, log_in_as: email}) do
