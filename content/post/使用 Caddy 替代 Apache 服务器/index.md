@@ -36,7 +36,7 @@ http://:2015
 WARNING: File descriptor limit 4864 is too low for production servers. At least 8192 is recommended. Fix with "ulimit -n 8192".
 ```
 
-caddy 会以当前目录为根目录，默认使用端口 2015。此时我们访问 http://:2015 即可访问 `/Users/sam/blog` 下的 html 文件。
+caddy 会以当前目录为根目录，默认使用端口 2015。此时我们访问 http://:2015 即可访问 `/Users/sam/blog` 下的 html 文件。
 
 当然，我们要更换端口也非常容易：
 
