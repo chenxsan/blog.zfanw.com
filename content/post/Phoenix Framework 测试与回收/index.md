@@ -121,7 +121,7 @@ end
     |> Conn.put_private(:phoenix_recycled, true)
   end
 ```
-这样，我们就弄明白，测试代码里执行一个 `get` 发生了什么：一个全新的 `%Plug.Conn{}` 结构被创建出来，并且拷入旧 `conn` 的 cookie 及 `accept`、`authorization` 两个请求头 - 换句话说，旧 `conn` 只有部分数据被保留，`conn.assigns` 不保留 - 因此 `conn.assigns.current_user` 为 `nil`。
+这样，我们就弄明白，测试代码里执行一个 `get` 发生了什么：一个全新的 `%Plug.Conn{}` 结构被创建出来，并且拷入旧 `conn` 的 cookie 及 `accept`、`authorization` 两个请求头 - 换句话说，旧 `conn` 只有部分数据被保留，`conn.assigns` 不保留 - 因此 `conn.assigns.current_user` 为 `nil`。
 
 Phoenix 把上面这种行为叫做[回收](https://hexdocs.pm/phoenix/1.4.0/Phoenix.ConnTest.html#module-recycling)？可是，为什么要有这个回收机制？
 
