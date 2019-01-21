@@ -3,3 +3,5 @@ node_modules
 _site
 .cache
 dist
+build
+_data.js
