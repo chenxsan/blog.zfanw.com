@@ -77,6 +77,10 @@ module.exports = function ({
           "author": {
             "@type": "Person",
             "name": "${author}"
+          },
+          "publisher": {
+            "@type": "Person",
+            "name": "${author}"
           }
         }
       </script>
