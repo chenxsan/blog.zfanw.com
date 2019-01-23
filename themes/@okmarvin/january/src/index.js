@@ -5,11 +5,11 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Router } from '@reach/router'
-import data from '../_data'
+import conn from '../_data'
 import md from '@okmarvin/markdown'
 import Components from './templates/*.js'
-const root = document.getElementById('app')
 const dispose = require('@okmarvin/okmarvin/lib/dispose')
+const root = document.getElementById('app')
 class ErrorBoundary extends React.Component {
   constructor (props) {
     super(props)
@@ -27,35 +27,32 @@ class ErrorBoundary extends React.Component {
     return this.props.children
   }
 }
-
-dispose(data, (_err, data) => {
-  const { files, siteConfig, okmarvinConfig } = data
-  const Md = md(okmarvinConfig)
-  render(
-    <ErrorBoundary>
-      <Router id='___OkMarvin___'>
-        {files
-          .filter(file => file.template) // exclude xml files
-          .map(file => {
-            try {
-              const Component =
-                Components[file.template.replace('.js', '')].default
-              return (
-                <Component
-                  key={file.permalink}
-                  path={file.permalink}
-                  {...file}
-                  content={file.content ? Md.render(file.content) : ''}
-                  siteConfig={siteConfig}
-                  default={file.template === '404.js'}
-                />
-              )
-            } catch (err) {
-              return undefined
-            }
-          })}
-      </Router>
-    </ErrorBoundary>,
-    root
-  )
-})
+const { files, siteConfig, okmarvinConfig } = dispose(conn)
+const Md = md(okmarvinConfig)
+render(
+  <ErrorBoundary>
+    <Router id='___OkMarvin___'>
+      {files
+        .filter(file => file.template) // exclude xml files
+        .map(file => {
+          try {
+            const Component =
+              Components[file.template.replace('.js', '')].default
+            return (
+              <Component
+                key={file.permalink}
+                path={file.permalink}
+                {...file}
+                content={file.content ? Md.render(file.content) : ''}
+                siteConfig={siteConfig}
+                default={file.template === '404.js'}
+              />
+            )
+          } catch (err) {
+            return undefined
+          }
+        })}
+    </Router>
+  </ErrorBoundary>,
+  root
+)
