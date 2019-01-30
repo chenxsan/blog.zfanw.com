@@ -84,3 +84,4 @@ permalink: /read
 | 2018.04.26 | 凤凰项目：一个 IT 运维的传奇故事         | Gene Kim, Kevin Behr, George Spafford |
 | 2018.04.29 | 写给大家看的设计书                       | [美] Robin Williams                   |
 | 2018.05.05 | 三体                                     | 刘慈欣                                |
+| 2019.01.30 | 魔戒                                     | J. R. R. Tolkien                      |
