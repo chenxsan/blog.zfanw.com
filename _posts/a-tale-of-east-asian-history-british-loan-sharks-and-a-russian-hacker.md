@@ -93,7 +93,7 @@ base64 -i encoded-text.txt -o outputed-decoded.txt
 
 我很快就发现，不仅仅只是这些韩国博客下的文件显得可疑。它们只是黑客用来生成他们所期望有的具体结果的文件。经过对大量隐蔽代码的更多解码，我终于找到输送系统本身。要部署这个特殊的组合 – 重定向和用来重定向的隐藏页，攻击者使用一个黑客梦想套装：被称为 “WSO 2.5“ 的东西。一旦他们发现我域名上旧版本 WordPress 的安全问题，他们就可以把 WSO 套件安装到隐蔽位置，这个位置有别于上述的攻击。虽然我不知道这个 Youtube 视频（没有声音）能保留多久，你可以[在这里](https://www.youtube.com/watch?v=y-Z5-uHvONc)看到黑客是怎样使用 WSO 的。真正用来安装控制我服务器的后门套件 PHP 代码可以在 [pastebin 这里](https://pastebin.com/N0eh3Q7Y)找到。
 
-![](http://muninn.net/blog/wp-content/uploads/2012/06/Screen-Shot-2012-06-05-at-11.44.06-300x118.png "屏幕截图在11.44.06 2012-06-05")
+![](http://muninn.net/blog/wp-content/uploads/2012/06/Screen-Shot-2012-06-05-at-11.44.06.png "屏幕截图在11.44.06 2012-06-05")
 
 ## 西蒙和他的朋友们
 
