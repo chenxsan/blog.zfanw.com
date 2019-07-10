@@ -3,9 +3,9 @@
 
 
 "@okmarvin/january@^1.15.7":
-  version "1.15.9"
-  resolved "https://registry.yarnpkg.com/@okmarvin/january/-/january-1.15.9.tgz#943b31096b0de9adde9765563e5a4b25c6c0578a"
-  integrity sha512-j2N1q3FJaG7F9LmH8kCIPut48v1cFE+Qo62/jyART9+f18aYqK/XxgOhuk8oCOStFIF88bZ3mYlrT/eIefKsRw==
+  version "1.15.11"
+  resolved "https://registry.yarnpkg.com/@okmarvin/january/-/january-1.15.11.tgz#fc097ecebd73c92274915615bd8bb4d12bf44a6d"
+  integrity sha512-e3Pd7cmDdy3s1D499XuJ42U2NRt/bmrsgVkFNsbJoDvmJExsLqHQxzci2av2ILVHKVLMvZL/Z0m5A5zXFfjSOQ==
   dependencies:
     "@okmarvin/slug" "^0.0.8"
     "@reach/router" "^1.2.1"
@@ -168,9 +168,9 @@ jsxstyle@^2.1.5:
     jsxstyle-utils "^2.1.5"
 
 lodash@^4.17.11:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+  version "4.17.13"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.13.tgz#0bdc3a6adc873d2f4e0c4bac285df91b64fc7b93"
+  integrity sha512-vm3/XWXfWtRua0FkUyEHBZy8kCPjErNBT9fJx8Zvs+U6zjqPbTUOpkaoum3O5uiA8sm+yNMHXfYkTUHFoMxFNA==
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
