@@ -3,9 +3,9 @@
 
 
 "@okmarvin/january@^1.15.7":
-  version "1.15.11"
-  resolved "https://registry.yarnpkg.com/@okmarvin/january/-/january-1.15.11.tgz#fc097ecebd73c92274915615bd8bb4d12bf44a6d"
-  integrity sha512-e3Pd7cmDdy3s1D499XuJ42U2NRt/bmrsgVkFNsbJoDvmJExsLqHQxzci2av2ILVHKVLMvZL/Z0m5A5zXFfjSOQ==
+  version "1.15.12"
+  resolved "https://registry.yarnpkg.com/@okmarvin/january/-/january-1.15.12.tgz#151c0339c56b7a9646e38daff31b8151676e7bd4"
+  integrity sha512-2iqPrjqGI25OQj6zke2pPvCioV/w5sxORTW9uiQE/GYvXptnuhR9kxNulqCH9xRKlTle9eDcdwneSBXVPwc2xQ==
   dependencies:
     "@okmarvin/slug" "^0.0.8"
     "@reach/router" "^1.2.1"
