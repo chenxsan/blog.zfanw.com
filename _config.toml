@@ -12,6 +12,8 @@ twitter = "saturnake"
 paginate = 10
 favicon = "/static/img/favicon.ico"
 logo = "/static/img/logo.svg"
+source = "https://github.com/chenxsan/blog.zfanw.com/blob/master/"
+
 
 [[menu]]
 text = "Home"

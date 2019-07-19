@@ -3,9 +3,9 @@
 
 
 "@okmarvin/january@^1.15.14":
-  version "1.15.14"
-  resolved "https://registry.yarnpkg.com/@okmarvin/january/-/january-1.15.14.tgz#2af62bd4793e483b8bbcfaa8f14feb59d8b1f582"
-  integrity sha512-B/EqVbAio7kXbhLvtnzGa/l8s2qaqcSpJ5VMO0Zg5KLgMxIjZA9UJf9WAM9ZbeUA+XyJl/nWJQjD6TIGWnlWbw==
+  version "1.15.15"
+  resolved "https://registry.yarnpkg.com/@okmarvin/january/-/january-1.15.15.tgz#655338775e1a0bba26810ee46f9d812df25ee34f"
+  integrity sha512-eFksHazqtJNcM2oVUBJY7R4keGJXrWmgOoLMB/ow3DyQoMRWxYzH3iloiKr7GBCOqgWeQONp8+jJTmy1D42tZw==
   dependencies:
     "@okmarvin/slug" "^0.0.8"
     "@reach/router" "^1.2.1"
@@ -161,16 +161,16 @@ jsxstyle-utils@^2.1.5:
     csstype "^2.5.7"
 
 jsxstyle@^2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/jsxstyle/-/jsxstyle-2.1.5.tgz#539f727f3f6240fc2472bffe12a8cc1a05085700"
-  integrity sha512-OPGUV54ErFckMXXRyMPm95o+ZBZhYzuyV9N4k9bjbYAu1oVWYQ6FQ5Z6C7VZA9z49XvmdqtSpT3KT+zm/rs9RA==
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/jsxstyle/-/jsxstyle-2.1.6.tgz#aa004f351c5e4ec833befc1234f412c52d2b2182"
+  integrity sha512-/fkSII1mrJP3QTmpdBa0dETpqD7q9Lbe+2WGUxjzadDB/3xfTPPLl0NBt4LLvC2CBASt7drxTFlD9YPJYXEBLg==
   dependencies:
     jsxstyle-utils "^2.1.5"
 
 lodash@^4.17.11:
-  version "4.17.13"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.13.tgz#0bdc3a6adc873d2f4e0c4bac285df91b64fc7b93"
-  integrity sha512-vm3/XWXfWtRua0FkUyEHBZy8kCPjErNBT9fJx8Zvs+U6zjqPbTUOpkaoum3O5uiA8sm+yNMHXfYkTUHFoMxFNA==
+  version "4.17.14"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
+  integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
