@@ -20,5 +20,7 @@
     "url": "https://github.com/chenxsan/blog.zfanw.com/issues"
   },
   "homepage": "https://github.com/chenxsan/blog.zfanw.com#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "okmarvin-cli": "^0.0.26"
+  }
 }
