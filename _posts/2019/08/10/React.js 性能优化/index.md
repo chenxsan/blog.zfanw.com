@@ -2,6 +2,8 @@
 title: React.js 性能优化
 date: 2019/08/10
 permalink: /react-js-optimize-performance
+tags:
+  - React.js
 ---
 
 一个 React.js 制作的登录页，UI 长这样：
@@ -25,7 +27,7 @@ React 的工作，大致有[两个阶段](https://reactjs.org/blog/2018/09/10/in
 
 截图中一共有三条柱形，表示我们的操作过程中 React 统计到三次 commit - 黑色表示当前选中了第一个 commit。这里柱形的高度表示 `render` 阶段的耗时，注意，我们并不统计 commit 阶段的耗时，因为 commit 阶段是浏览器引擎的工作，并没有我们优化的余地。
 
-理论上，我们操作邮箱输入框，登录按钮是没有必要反复 render 的。但截图里我们看到了，登录按钮随之发生 render，这是因为，组件是否重新 render 由 [`shouldComponentUpdate`](https://reactjs.org/docs/react-component.html#shouldcomponentupdate) 决定，而它的返回值默认是 `true`。这就浪费时间了，也因此这里就有了优化的余地：我们可以抽出登录按钮代码，变成一个组件，然后在组件的 `shouldComponentUpdate` 节点中返回 `false`，阻止多余的 render。
+理论上，我们操作邮箱输入框，登录按钮是没有必要反复 render 的。但截图里我们看到了，登录按钮随之发生 render，这是因为，组件是否重新 render 由 [`shouldComponentUpdate`](https://reactjs.org/docs/react-component.html#shouldcomponentupdate) 决定，而它的返回值默认是 `true`。这就浪费时间了，也因此这里就有了优化的余地：我们可以抽出登录按钮代码，变成一个组件，然后在组件的 `shouldComponentUpdate` 事件中返回 `false`，阻止多余的 render。
 
 因为这个优化非常常见，所以 React 特地提供了 [`React.PureComponent`](https://reactjs.org/docs/react-api.html#reactpurecomponent) 与 [`React.memo`](https://reactjs.org/docs/react-api.html#reactmemo)，分别针对类组件与函数组件 ：
 
