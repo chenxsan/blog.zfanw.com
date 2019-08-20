@@ -25,7 +25,7 @@ React 的工作，大致有[两个阶段](https://reactjs.org/blog/2018/09/10/in
 1. `render` 阶段，生成 Virtual DOM，然后 diff；
 2. `commit` 阶段，根据 `render` 阶段 diff 的结果来操作 DOM 节点。
 
-截图中一共有三条柱形，表示我们的操作过程中 React 开发者工具统计到三次 commit - 图中正在查看第一个 commit。这里柱形的高度表示 `render` 阶段的耗时，注意，开发者工具并不统计 commit 阶段的耗时，因为 commit 阶段是浏览器引擎的工作，没有我们优化的余地。
+截图中一共有三条柱形，表示我们的操作过程中 React 开发者工具统计到三次 commit - 图中正在查看第一个 commit。
 
 理论上，我们操作邮箱输入框，登录按钮是没有必要反复 render 的。但截图里我们看到了，邮箱输入框中输入时，登录按钮随之发生 render。很简单，登录按钮属于表单组件，表单组件的 `state` 发生变化，导致整个表单组件包括登录按钮重新 render。
 
