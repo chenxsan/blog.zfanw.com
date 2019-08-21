@@ -1,5 +1,5 @@
 ---
-title: 如何在 Github 给开源项目贡献代码
+title: Github 最佳实践
 date: 2014-09-16T22:44:55+00:00
 permalink: /best-practice-contribute-on-github
 tags:
