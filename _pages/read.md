@@ -85,3 +85,4 @@ permalink: /read
 | 2018.04.29 | 写给大家看的设计书                       | [美] Robin Williams                   |
 | 2018.05.05 | 三体                                     | 刘慈欣                                |
 | 2019.01.30 | 魔戒                                     | J. R. R. Tolkien                      |
+| 2019.09.23 | 地海传奇                                 | Ursula K. Le Guin                     |
