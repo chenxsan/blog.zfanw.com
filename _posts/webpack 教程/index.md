@@ -11,17 +11,15 @@ tags:
   - 教程
 ---
 
-> 本文基于 webpack 4，babel 7，最近更新于 2018-12-08
+> 本教程基于 webpack 4，babel 7，最近更新于 2019-09-02
 
-听说 webpack 很难，听说 webpack 还有专门的配置工程师，所以你在困惑，不知自己是否真需要 webpack。
-
-其实判断标准很简单：
+你需要 webpack 吗？
 
 1. 如果你的代码不需要模块化，那么你**不需要 webpack**；
-2. 如果你的代码需要模块化，那么你**可能需要 webpack**；
+2. 如果你的代码需要模块化，那么你**可能需要 webpack**，因为还有其它选择；
 3. 如果你的代码里，JavaScript、图片、CSS、JSON 等文件都要模块化，那么你**九成需要 webpack**。
 
-## 为什么选择 webpack
+## webpack 是什么
 
 [**webpack** 官网](https://webpack.js.org/)是这样描述 webpack 的：
 
@@ -31,9 +29,9 @@ tags:
 
 只不过在 webpack 下，所有资源文件（assets）都可以是模块，包括 JavaScript、 CSS、图片、JSON 等等。
 
-我们当然清楚，在 JavaScript 里 `import` 图片会报错。但在 webpack 下，这没有问题。这要归功于**加载器**（loader）。通过加载器，webpack 将 JavaScript 的模块化普及至其它文件类型 - 这正是 webpack 跨出的与众不同的一步 - 但也导致它配置繁多，广受诟病。
+我们当然知道，在 JavaScript 里 `import` 图片会报错。但在 webpack 下，这没有问题。这要归功于**加载器**（loader）。通过加载器，webpack 将 JavaScript 的模块化普及至其它文件类型 - 这正是 webpack 跨出的与众不同的一步 - 但也导致它配置繁多，广受诟病。
 
-但明白 webpack 这一用意，我们就掌握了 webpack 核心，接下来，查查文档，基本都能搞定。是的，你也可以成为 webpack 配置工程师。
+但明白 webpack 这一用意，我们就掌握了 webpack 核心，接下来，查查文档，你也可以成为 webpack 配置工程师。
 
 ## 从零开始手写 React.js 项目
 
