@@ -2,6 +2,9 @@
 title: BEM 命名规范的问题
 date: 2019/09/27
 permalink: /problems-of-bem-css-naming-convention
+tags:
+  - CSS
+  - BEM
 ---
 
 过去几年里，我多时在使用 React + CSS in JS 开发单页面应用，也就避开了 [CSS 的所谓架构问题](https://blog.zfanw.com/css-architecture/)。但最近又写了些静态页面，于是重拾 [BEM - Block、Element、Modifier](https://en.bem.info/)，密集使用后，就能感知到几个问题。
