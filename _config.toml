@@ -7,7 +7,6 @@ toc = true
 theme = "@okmarvin/january"
 themeColor = "#ffd54f"
 github = "chenxsan"
-twitter = "saturnake"
 # google_analytics = "UA-19839258-14"
 paginate = 10
 favicon = "/static/img/favicon.ico"
