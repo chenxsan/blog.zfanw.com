@@ -10,9 +10,9 @@ tags:
 
 ---
 
-Emmet 项目原来叫 Zen Coding，2012 年改名为 Emmet。
+Emmet 项目原先叫 Zen Coding，2012 年改名为 Emmet。
 
-Emmet 官方支持[很多编辑器](http://emmet.io/download/)，但 [Emmet.vim](https://github.com/mattn/emmet-vim/) 不是 Emmet 亲生，它是日本 [Yasuhiro Matsumoto](http://mattn.kaoriya.net/) 开发。
+Emmet 官方支持[很多编辑器](http://emmet.io/download/)，但 Vim 插件 [Emmet.vim](https://github.com/mattn/emmet-vim/) 不是并非官方支持的，它是日本 [Yasuhiro Matsumoto](http://mattn.kaoriya.net/) 开发。
 
 ## 下载 Emmet.vim
 
@@ -24,14 +24,14 @@ Emmet 官方支持[很多编辑器](http://emmet.io/download/)，但 [Emmet.vim]
 
 ```bash
 cd ~/.vim
-unzip emmet-vim.zip
+unzip /path/to/emmet-vim.zip
 ```
 
 不过，我会推荐使用 [pathogen.vim](http://www.vim.org/scripts/script.php?script_id=2332)  或是 [Vundle](https://github.com/VundleVim/Vundle.vim) 来管理 Vim 插件，具体用法可以查看它们的文档。
 
 ## 使用 Emmet.vim
 
-**说明**：本着 Don't repeat yourself 的原则，下面的内容中除非特别说明，**调用快捷键**均指按下 <**Ctrl-y**\>。
+**说明**：本着废话少说（don't repeat yourself）的原则，下面的内容除非特别说明，**调用快捷键**均指按下 <**Ctrl-y**\>。
 
 ### 展开
 
