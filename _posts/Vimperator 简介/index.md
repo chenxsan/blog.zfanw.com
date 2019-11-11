@@ -11,7 +11,7 @@ tags:
 
 来自 2017 年 9 月的作者：
 
-> 因为最近翻新博客，就重新整理了文章，这是现有的最早的一篇，写于 2011 年，可见我使用 Vimperator 的历史已经很长。记得最初着手翻译，是打算译完整个文档，希望最后能并入 Vimperator 官方的，但种种原因，不了了之，只剩下这几篇，帮我记起当初的热爱 - 当然，时至今日，我还是爱 Vimperator 的。
+> 因为最近翻新博客，就重新整理了文章，这是现存的最早的一篇，写于 2011 年，可见我使用 Vimperator 的历史已经很长。记得最初着手翻译，是打算译完整个文档，希望最后能并入 Vimperator 官方的，但种种原因，不了了之，只剩下这几篇，帮我记起当初的热爱 - 当然，时至今日，我还是爱 Vimperator 的。
 
 **注**：本文译自 [Vimperator 英文帮助](https://github.com/vimperator/vimperator-labs/blob/master/vimperator/locale/en-US/intro.xml)，部分内容未翻。
 
