@@ -86,3 +86,4 @@ permalink: /read
 | 2018.05.05 | 三体                                     | 刘慈欣                                |
 | 2019.01.30 | 魔戒                                     | J. R. R. Tolkien                      |
 | 2019.09.23 | 地海传奇                                 | Ursula K. Le Guin                     |
+| 2019.12.22 | 失去一切的人                             | Ursula K. Le Guin                     |
