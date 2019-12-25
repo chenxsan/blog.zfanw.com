@@ -23,5 +23,5 @@ text = "看书"
 permalink = "/read/"
 
 [[menu]]
-text = "关于"
+text = "About"
 permalink = "/about/"
