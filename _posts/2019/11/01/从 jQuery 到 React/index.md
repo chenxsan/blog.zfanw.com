@@ -17,7 +17,7 @@ tags:
 
 <button id='counter'>0</button>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="jquery.min.js"></script>
 
 <script>
 $('#counter').on('click', function () {
@@ -87,7 +87,7 @@ $(this).html(nextCounter)
 
 我们只要设定新状态值，React 就会帮我们填充数据。
 
-我想，一般人都会偏爱后一种做法吧？因为实在是不怎么费脑，而且更贴近我们日常 HTML 代码。
+假如说 HTML 显现的是应用最新的状态，则我们的页面不过是在 N 个应用状态间切换。jQuery 下我们需要负责这一切换过程，而 React 下我们只负责描述这 N 个应用状态。
 
 当然，React 的做法是有代价的，在 React 下，我们所有的 HTML（包括初次渲染）现在都由 JavaScript 生成，也因此为了应付 SEO 等需求，React 等框架常常还要引入[服务器端渲染](https://blog.zfanw.com/react-js-server-render/)。而在 jQuery 中，初次渲染的 HTML 是静态 HTML 文件，并不需要额外的服务器端渲染。
 
